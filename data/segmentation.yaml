@@ -1,0 +1,3 @@
+config_file: 'mmsegmentation/configs/pspnet/pspnet_r101-d8_512x512_80k_ade20k.py'
+checkpoint: 'mmsegmentation/models/pspnet_r101-d8_512x512_160k_ade20k_20200615_100650-967c316f.pth'
+device: 'cuda:0'

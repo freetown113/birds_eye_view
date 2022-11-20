@@ -1,0 +1,27 @@
+image_width: 1920
+image_height: 1208
+camera_name: interfacea_link3
+distortion_model: plumb_bob
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [1823.55023,    0.     ,  963.04658,
+            0.     , 1825.18363,  637.58705,
+            0.     ,    0.     ,    1.     ]
+camera_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.297396, 0.122719, -0.003321, 0.000607, 0.000000]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1., 0., 0.,
+         0., 1., 0.,
+         0., 0., 1.]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [1668.63586,    0.     ,  964.91304,    0.     ,
+            0.     , 1764.87244,  637.64629,    0.     ,
+            0.     ,    0.     ,    1.     ,    0.     ]
