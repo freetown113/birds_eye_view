@@ -1,19 +1,19 @@
 # Bird's eye view
 
-This project is about to get *segmentation mask* of one particular class - **Road** in this case. And transform *frontal view* of this object taken from the camera into *topdown (bird's eye)* view.<br>
+This project is about to get *segmentation mask* of one particular class - **Road** in this case. And transform *frontal view* of this object taken from the camera into *top down (bird's eye)* view.<br>
 
 **Input:** Original image taken from the camera (3 channels image). Camera's parameters(intrinsics, distortion coefficients).<br>
-**Output:** Segmentation mask (1 channel image) perspective transformed to topdown view.
+**Output:** Segmentation mask (1 channel image) perspective transformed to top down view.
 
 
 ### About
 > 
 > - *Segmentation algorithm* was taken from https://github.com/open-mmlab/mmsegmentation 
 > - There are 3 different perspective transformation algorithms in the project:
->  1. `projector_initial.py` contains mix of opencv functions and manual operations with numpy arrays.
+>  1. `projector_initial.py` contains a mix of opencv functions and manual operations with numpy arrays.
 >  2. `projector_opencv.py` contains transformation method based purely on opencv functions.
->  3. `projector_alternative.py` contains manual perspective transformation method.
-> - Interfaces of all methods are the same, so any of them can be use interchangebly. One just need to chnage import module in line 4 of `main.py` file.  
+>  3. `projector_alternative.py` contains a manual perspective transformation method.
+> - Interfaces of all methods are the same, so any of them can be used interchangeably. One just need to change import module in line 4 of `main.py` file.  
 
 ### Prepare
 >
@@ -33,4 +33,4 @@ bash launch.sh
 
 ### Result
 >
-> - After the completion of the programm execution process the `output.jpg` image will be saved to the `result` directory.
+> - After the completion of the program execution process the `output.jpg` image will be saved to the `result` directory.
